@@ -1,0 +1,7 @@
+# Tau-Double-Bang
+This repository includes Python scripts and parquet files relevant to my Tau Double Bang project. It is a research project related to high-energy neutrino event reconstructions in the IceCube Neutrino Observatory under the supervision of Professor Carlos Argüelles-Delgado from Harvard.
+
+The IceCube neutrino telescope consists of digital optical modules (DOMs) that detect Cherenkov photons produced when charged particles pass through the ice. In tau neutrino deep inelastic charged current interactions (NuTauCC events), photons are emitted from both the interaction and decay vertices (as the tau minus further decays leptonically or hadronically).
+My main job is to build an RNN model that performs a classification task on DOMs in the case of nuTauCC events, depending on whether they detect photons from a single vertex or both vertices, labeling them as background or signal DOMs, respectively.
+
+All the training datasets are generated using Prometheus (https://github.com/Harvard-Neutrino/prometheus), a package used to simulate neutrino interactions in neutrino telescopes of various geometries. Prometheus models neutrino interactions within a region around the IceCube detector volume. Specifically, Prometheus simulates the Cherenkov radiation produced by hadronic and leptonic products during the interaction, tracks the propagation of Cherenkov photons in the detector volume, and records the times at which these photons hit the detector modules. 
